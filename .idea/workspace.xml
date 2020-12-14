@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d7d8100-b964-4b69-8264-a17851f87f83" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/channel/demo7/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bash/git/upload.sh" beforeDir="false" afterPath="$PROJECT_DIR$/bash/git/upload.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,26 +45,20 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\godemo\go_base_util" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\godemo\go_base_util\bash\git" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build go_base_util/channel/demo6">
+  <component name="RunManager" selected="Go Build.go build go_base_util/channel/demo7">
     <configuration name="go build go_base_util/bash/git" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go_base_util" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/bash/git/main.go" />
       <package value="go_base_util/bash/git" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build go_base_util/channel/demo3" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go_base_util" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/channel/demo3/main.go" />
-      <package value="go_base_util/channel/demo3" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -93,13 +89,22 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build go_base_util/channel/demo7" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go_base_util" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/channel/demo7/main.go" />
+      <package value="go_base_util/channel/demo7" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build go_base_util/channel/demo7" />
         <item itemvalue="Go Build.go build go_base_util/channel/demo6" />
         <item itemvalue="Go Build.go build go_base_util/channel/demo5" />
         <item itemvalue="Go Build.go build go_base_util/bash/git" />
         <item itemvalue="Go Build.go build go_base_util/channel/demo4" />
-        <item itemvalue="Go Build.go build go_base_util/channel/demo3" />
       </list>
     </recent_temporary>
   </component>
@@ -114,22 +119,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="558" y="86" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1607934647316" />
-    <state width="1877" height="227" key="GridCell.Tab.0.bottom" timestamp="1607935687953">
+    <state width="1877" height="227" key="GridCell.Tab.0.bottom" timestamp="1607936202872">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="227" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607935687953" />
-    <state width="1877" height="227" key="GridCell.Tab.0.center" timestamp="1607935687953">
+    <state width="1877" height="227" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607936202872" />
+    <state width="1877" height="227" key="GridCell.Tab.0.center" timestamp="1607936202872">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="227" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607935687953" />
-    <state width="1877" height="227" key="GridCell.Tab.0.left" timestamp="1607935687953">
+    <state width="1877" height="227" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607936202872" />
+    <state width="1877" height="227" key="GridCell.Tab.0.left" timestamp="1607936202872">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="227" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607935687953" />
-    <state width="1877" height="227" key="GridCell.Tab.0.right" timestamp="1607935687953">
+    <state width="1877" height="227" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607936202872" />
+    <state width="1877" height="227" key="GridCell.Tab.0.right" timestamp="1607936202872">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="227" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607935687953" />
+    <state width="1877" height="227" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607936202872" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1607936183988">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607936183988" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1607936183988">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607936183988" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1607936183988">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607936183988" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1607936183988">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607936183988" />
     <state x="753" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607934653945">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
