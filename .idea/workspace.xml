@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5d7d8100-b964-4b69-8264-a17851f87f83" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bash/git/upload.sh" beforeDir="false" afterPath="$PROJECT_DIR$/bash/git/upload.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,22 +47,13 @@
       <recent name="D:\godemo\go_base_util\bash\git" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build go_base_util/bash/git">
+  <component name="RunManager" selected="Go Build.go build go_base_util/channel/demo5">
     <configuration name="go build go_base_util/bash/git" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go_base_util" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/bash/git/main.go" />
       <package value="go_base_util/bash/git" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build go_base_util/channel/demo1" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go_base_util" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/channel/demo1/main.go" />
-      <package value="go_base_util/channel/demo1" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -94,13 +84,22 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build go_base_util/channel/demo5" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go_base_util" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/channel/demo5/main.go" />
+      <package value="go_base_util/channel/demo5" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build go_base_util/channel/demo5" />
         <item itemvalue="Go Build.go build go_base_util/bash/git" />
         <item itemvalue="Go Build.go build go_base_util/channel/demo4" />
         <item itemvalue="Go Build.go build go_base_util/channel/demo3" />
         <item itemvalue="Go Build.go build go_base_util/channel/demo2" />
-        <item itemvalue="Go Build.go build go_base_util/channel/demo1" />
       </list>
     </recent_temporary>
   </component>
