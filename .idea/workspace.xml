@@ -47,22 +47,13 @@
       <recent name="D:\godemo\go_base_util\bash\git" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build go_base_util/channel/demo5">
+  <component name="RunManager" selected="Go Build.go build go_base_util/channel/demo6">
     <configuration name="go build go_base_util/bash/git" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go_base_util" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/bash/git/main.go" />
       <package value="go_base_util/bash/git" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build go_base_util/channel/demo2" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go_base_util" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/channel/demo2/main.go" />
-      <package value="go_base_util/channel/demo2" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -93,13 +84,22 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build go_base_util/channel/demo6" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go_base_util" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/channel/demo6/main.go" />
+      <package value="go_base_util/channel/demo6" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build go_base_util/channel/demo6" />
         <item itemvalue="Go Build.go build go_base_util/channel/demo5" />
         <item itemvalue="Go Build.go build go_base_util/bash/git" />
         <item itemvalue="Go Build.go build go_base_util/channel/demo4" />
         <item itemvalue="Go Build.go build go_base_util/channel/demo3" />
-        <item itemvalue="Go Build.go build go_base_util/channel/demo2" />
       </list>
     </recent_temporary>
   </component>
@@ -114,22 +114,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="558" y="86" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1607934647316" />
-    <state width="1877" height="228" key="GridCell.Tab.0.bottom" timestamp="1607934441199">
+    <state width="1877" height="227" key="GridCell.Tab.0.bottom" timestamp="1607935622658">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="228" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607934441199" />
-    <state width="1877" height="228" key="GridCell.Tab.0.center" timestamp="1607934441199">
+    <state width="1877" height="227" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607935622658" />
+    <state width="1877" height="227" key="GridCell.Tab.0.center" timestamp="1607935622658">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="228" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607934441199" />
-    <state width="1877" height="228" key="GridCell.Tab.0.left" timestamp="1607934441198">
+    <state width="1877" height="227" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607935622658" />
+    <state width="1877" height="227" key="GridCell.Tab.0.left" timestamp="1607935622658">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="228" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607934441198" />
-    <state width="1877" height="228" key="GridCell.Tab.0.right" timestamp="1607934441199">
+    <state width="1877" height="227" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607935622658" />
+    <state width="1877" height="227" key="GridCell.Tab.0.right" timestamp="1607935622658">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="228" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607934441199" />
+    <state width="1877" height="227" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607935622658" />
     <state x="753" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607934653945">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
