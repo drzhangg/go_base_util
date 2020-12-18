@@ -1,0 +1,18 @@
+FROM centos:6.9
+
+RUN echo '0.0.0.0 mirrors.aliyun.com' >> /etc/hosts && \
+curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-6.repo && \
+curl -o /etc/yum.repos.d/epel.repo http://mirrors.aliyun.com/repo/epel-6.repo && \
+yum install openssh-server nginx -y
+
+RUN service sshd restart
+
+ENV SSH_PWD 123456
+
+ADD init.sh /init.sh
+
+WORKDIR /use/share/nginx/html
+
+EXPOSE 22 80
+
+ENTRYPOINT ["/bin/bash","/init.sh"]
