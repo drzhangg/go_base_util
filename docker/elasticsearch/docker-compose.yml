@@ -7,6 +7,10 @@ services:
     container_name: elasticsearch
     ports:
       - 9200:9200
+      - 9300:9300
+    environment:
+      ES_JAVA_OPTS: '-Xms64m -Xmx128m'
+
   kibana:
     image: daocloud.io/library/kibana:6.5.4
     restart: always
