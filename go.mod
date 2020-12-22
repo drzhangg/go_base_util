@@ -3,6 +3,7 @@ module go_base_util
 go 1.15
 
 require (
+	github.com/Shopify/sarama v1.27.2 // indirect
 	github.com/fortytw2/leaktest v1.3.0 // indirect
 	github.com/gin-gonic/gin v1.6.3
 	github.com/go-redis/redis v6.15.9+incompatible
