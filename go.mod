@@ -11,6 +11,7 @@ require (
 	github.com/golang/protobuf v1.4.3
 	github.com/jinzhu/gorm v1.9.16
 	github.com/mailru/easyjson v0.7.6 // indirect
+	github.com/nsqio/go-nsq v1.0.8
 	github.com/olivere/elastic v6.2.35+incompatible
 	github.com/onsi/ginkgo v1.14.2 // indirect
 	github.com/onsi/gomega v1.10.3 // indirect
