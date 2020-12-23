@@ -13,14 +13,15 @@ var nullLogger = log.New(ioutil.Discard, "", log.LstdFlags)
 
 func sendMessage() {
 	config := nsq.NewConfig() // 1. 创建生产者
-	producer, err := nsq.NewProducer(private.ADDR + ":4150", config)
+
+	producer, err := nsq.NewProducer(private.Addr+":4150", config)
 	if err != nil {
-		log.Fatalln("连接失败: (127.0.0.1:4150)", err)
+		log.Fatalln("连接失败: ", err)
 	}
 
 	errPing := producer.Ping() // 2. 生产者ping
 	if errPing != nil {
-		log.Fatalln("无法ping通: 127.0.0.1:4150", errPing)
+		log.Fatalln("无法ping通: ", errPing)
 	}
 
 	producer.SetLogger(nullLogger, nsq.LogLevelInfo) // 3. 设置不输出info级别的日志

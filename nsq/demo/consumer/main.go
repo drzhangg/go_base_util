@@ -25,7 +25,7 @@ func doConsumerTask() {
 
 	// 3. 通过http请求来发现nsqd生产者和配置的topic（推荐使用这种方式）
 	lookupAddr := []string{
-		private.ADDR + ":4161",
+		private.Addr + ":4161",
 	}
 	err := q.ConnectToNSQLookupds(lookupAddr)
 	if err != nil {
