@@ -31,7 +31,7 @@ func parsePattern(pattern string) []string {
 	return parts
 }
 
-func (r *router) addRouter(method string, pattern string, handler HandlerFunc) {
+func (r *router) addRoute(method string, pattern string, handler HandlerFunc) {
 	parts := parsePattern(pattern)
 
 	key := method + "-" + pattern
