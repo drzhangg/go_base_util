@@ -86,5 +86,27 @@ func printRecord(client proto.StreamServiceClient, r *proto.StreamRequest) error
 }
 
 func printRoute(client proto.StreamServiceClient, r *proto.StreamRequest) error {
+	stream, err := client.Route(context.TODO())
+	if err != nil {
+		return err
+	}
+
+	for n := 0; n <= 7; n++ {
+		err = stream.Send(r)
+		if err != nil {
+			return err
+		}
+
+		resp, err := stream.Recv()
+		if err == io.EOF {
+			break
+		}
+		if err != nil {
+			return err
+		}
+		log.Printf("resp: pt.name: %v,pt.value: %v", resp.Pt.Name, resp.Pt.Value)
+	}
+
+	stream.CloseSend()
 	return nil
 }
