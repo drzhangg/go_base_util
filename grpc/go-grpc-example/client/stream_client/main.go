@@ -65,6 +65,23 @@ func printLists(client proto.StreamServiceClient, r *proto.StreamRequest) error 
 }
 
 func printRecord(client proto.StreamServiceClient, r *proto.StreamRequest) error {
+	stream, err := client.Record(context.TODO())
+	if err != nil {
+		return err
+	}
+
+	for n := 0; n < 6; n++ {
+		err := stream.Send(r)
+		if err != nil {
+			return err
+		}
+	}
+
+	resp, err := stream.CloseAndRecv()
+	if err != nil {
+		return err
+	}
+	log.Printf("resp: pt.name:%v, pt.value : %v", resp.Pt.Name, resp.Pt.Value)
 	return nil
 }
 

@@ -3,6 +3,7 @@ package main
 import (
 	"go_base_util/grpc/go-grpc-example/proto"
 	"google.golang.org/grpc"
+	"io"
 	"log"
 	"net"
 )
@@ -40,6 +41,20 @@ func (s *StreamService) List(r *proto.StreamRequest, stream proto.StreamService_
 }
 
 func (s *StreamService) Record(stream proto.StreamService_RecordServer) error {
+	for {
+		r, err := stream.Recv()
+		if err == io.EOF {
+			return stream.SendAndClose(&proto.StreamResponse{Pt: &proto.StreamPoint{
+				Name:  "grpc stream server: Record",
+				Value: 1,
+			}})
+		}
+
+		if err != nil {
+			return err
+		}
+		log.Printf("stream.Recv pt.name:%v, pt.value:%v", r.Pt.Name, r.Pt.Value)
+	}
 	return nil
 }
 
