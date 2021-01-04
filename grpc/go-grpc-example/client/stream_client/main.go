@@ -1,8 +1,10 @@
 package main
 
 import (
+	"context"
 	"go_base_util/grpc/go-grpc-example/proto"
 	"google.golang.org/grpc"
+	"io"
 	"log"
 )
 
@@ -27,7 +29,7 @@ func main() {
 		log.Fatalf("printLists.err: %v", err)
 	}
 
-	err = printRecord(client,&proto.StreamRequest{Pt: &proto.StreamPoint{
+	err = printRecord(client, &proto.StreamRequest{Pt: &proto.StreamPoint{
 		Name:  "grpc stream record client: record",
 		Value: 2021,
 	}})
@@ -35,7 +37,7 @@ func main() {
 		log.Fatalf("printRecord.err: %v", err)
 	}
 
-	err = printRoute(client,&proto.StreamRequest{Pt: &proto.StreamPoint{
+	err = printRoute(client, &proto.StreamRequest{Pt: &proto.StreamPoint{
 		Name:  "grpc stream route client: route",
 		Value: 2021,
 	}})
@@ -45,6 +47,20 @@ func main() {
 }
 
 func printLists(client proto.StreamServiceClient, r *proto.StreamRequest) error {
+	stream, err := client.List(context.TODO(), r)
+	if err != nil {
+		return err
+	}
+	for {
+		resp, err := stream.Recv()
+		if err == io.EOF {
+			break
+		}
+		if err != nil {
+			return err
+		}
+		log.Printf("resp: pt.name: %s, pt.value: %v", resp.Pt.Name, resp.Pt.Value)
+	}
 	return nil
 }
 
