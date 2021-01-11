@@ -24,4 +24,5 @@ func main() {
 	time.Sleep(time.Second)
 
 	fmt.Println("main function end")
+	fmt.Println("12345")
 }
