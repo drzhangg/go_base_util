@@ -4,6 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 	_ "github.com/go-sql-driver/mysql"
 	"go_base_util/goroutine/handler"
+	_ "net/http/pprof"
 )
 
 func main() {
