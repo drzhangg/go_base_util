@@ -35,11 +35,11 @@ func main() {
 	//	fmt.Println(k,v)
 	//}
 
-	var ss = []string{"i","love","golang"}
-	for i := 0; i < len(ss); i++ {
-		ss = append(ss, "hello")
-		fmt.Println(i,ss[i])
-	}
+	//var ss = []string{"i","love","golang"}
+	//for i := 0; i < len(ss); i++ {
+	//	ss = append(ss, "hello")
+	//	fmt.Println(i,ss[i])
+	//}
 
 
 	/*
@@ -53,4 +53,19 @@ func main() {
 	time.Sleep(100 * time.Second)
 	 */
 
+	a := xx()(1)
+	fmt.Println(a)
+
+
+	var s [10]int
+	s[0] = 1
+
+	fmt.Println(len(s),cap(s))
+
+}
+
+func xx() func(a int) int{
+	return func(a int) int {
+		return  a + 1
+	}
 }
