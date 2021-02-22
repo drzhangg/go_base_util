@@ -13,7 +13,7 @@ RUN echo "deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricte
 
 RUN apt-get update
 
-# 安装ssh服务
+# 安装ssh服务g
 RUN apt-get install -y openssh-server
 
 RUN mkdir -p /var/run/sshd
