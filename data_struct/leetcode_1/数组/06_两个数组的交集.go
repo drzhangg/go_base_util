@@ -14,7 +14,7 @@ func intersect(nums1, nums2 []int) []int {
 	for _,v := range nums2{
 		if m[v] > 0{
 			intersection = append(intersection, v)
-			v--
+			m[v]--
 		}
 	}
 	return intersection
