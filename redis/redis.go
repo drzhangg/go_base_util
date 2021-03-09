@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"fmt"
 	"github.com/go-redis/redis"
 )
 
@@ -9,8 +10,15 @@ var ctx = context.Background()
 
 func main() {
 	client := redis.NewClient(&redis.Options{
-		Addr: "192.168.31.191:6379",
+		Addr: ":6379",
 	})
 
-	client.Set("name", "jerry", 0)
+	r := client.Get("name")
+	result, err := r.Result()
+	if err != nil {
+		fmt.Println("err:", err)
+	}
+	fmt.Println("result:", result)
+
+	//client.Set("name", "jerry", 0)
 }
