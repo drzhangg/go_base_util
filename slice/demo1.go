@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	//sli1 := []int{1,2,3,4,5,6}
@@ -23,4 +25,21 @@ func main() {
 	fmt.Println(one)
 	fmt.Println(sli2)
 	fmt.Println(len(sli2), cap(sli2))
+
+
+	a := [5]int{}
+	fmt.Println(cap(a))
+
+
+	point := "123"
+	p := &point
+	fmt.Println(&p)
+	fmt.Println(*p)
+
+
+	var point1  *string
+
+	fmt.Printf("%T",point1)
+
+
 }
