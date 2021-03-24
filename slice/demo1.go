@@ -42,4 +42,7 @@ func main() {
 	fmt.Printf("%T",point1)
 
 
+	fmt.Println(string(-1))
+
+
 }
