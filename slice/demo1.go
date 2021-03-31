@@ -4,45 +4,25 @@ import (
 	"fmt"
 )
 
+import (
+	"strings"
+)
+
 func main() {
-	//sli1 := []int{1,2,3,4,5,6}
-	//one := sli1[0]
-	//copy(sli1,sli1[1:])
-	//sli1 = sli1[:len(sli1)-1]
-	//
-	//fmt.Println(one)
-	//fmt.Println(sli1)
-	//fmt.Println(len(sli1), cap(sli1))
+	testStr := "_ga=GA1.1.43310309.1616569846; _hjid=14d4261c-e4f3-44a2-b417-c16200be883e; _agent_id=9422; _enterprise_id=5869; _VERSION_=legacy;_ga_Q21FPJS3FB=GS1.1.1616988393.1.1.1616988912.0; _authenticated=9428d35619fb871da96c8cf6fafc0479da5a82a8881da522ce8b800c6062e815; MEIQIA_TRACK_ID=1qT6jsqvGp91HLODREHs63rx54o; _ga_ZPLPLJ4XQG=GS1.1.1617184132.22.0.1617184132.0"
+	strArr := strings.Split(testStr, ";")
+	strMap := make(map[string]string, 20)
+	for _, v := range strArr {
+		tmp := strings.Split(v, "=")
+		for i, k := range tmp {
+			strMap[k] = tmp[i+1]
+			fmt.Println(strMap)
+			break
+		}
+		//continue
+	}
+	//fmt.Println("strmap;:::",strMap)
 
-
-	sli2 := []int{1,2,3,4,5,6}
-	one := sli2[0]
-	//copy(sli2,sli2[1:])
-	fmt.Println(len(sli2),cap(sli2))
-
-	sli2 = sli2[1:]
-	sli2 = append(sli2, 7)
-	fmt.Println(one)
-	fmt.Println(sli2)
-	fmt.Println(len(sli2), cap(sli2))
-
-
-	a := [5]int{}
-	fmt.Println(cap(a))
-
-
-	point := "123"
-	p := &point
-	fmt.Println(&p)
-	fmt.Println(*p)
-
-
-	var point1  *string
-
-	fmt.Printf("%T",point1)
-
-
-	fmt.Println(string(-1))
-
+	fmt.Println(strMap["_ga_Q21FPJS3FB"])
 
 }
