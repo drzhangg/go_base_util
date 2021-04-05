@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	resp, err := http.Get("http://127.0.0.1:2375/version")
+	resp, err := http.Get("http://192.168.31.232:2375/images/search")
 	if err != nil {
 		fmt.Println("err:", err)
 		return

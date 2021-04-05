@@ -1,28 +1,38 @@
-package array_list
+package main
 
-var (
-	items []string //数组
-	n     = 0      //数组大小
-	head  = 0      //队头下标
-	tail  = 0      //队尾下标
+import (
+	"encoding/json"
+	"fmt"
 )
 
-func CircularQueue(capacity int) {
-	n = capacity
-
-}
-
-// 入队
-func enqueue(item string) bool {
-	// 队列满了
-	if (tail+1)%n == head {
-		return false
-	}
-	items[tail] = item
-	tail = (tail + 1) % n
-	return true
-}
+var js = `[{"aaa":"3","bbb":199,"ccc":93.32},{"aaa":"2","bbb":199.16,"ccc":33},{"aaa":"6","bbb":199.1600,"ccc":22}]`
 
 func main() {
+	var months = []string{"1","2","3","4","5","6","7"}
 
+	type data struct {
+		Aaa string  `json:"aaa"`
+		Bbb float64 `json:"bbb"`
+		Ccc float64 `json:"ccc"`
+	}
+
+	var ds []data
+	err := json.Unmarshal([]byte(js), &ds)
+	if err != nil {
+		fmt.Println("un err:", err)
+	}
+
+	var bb = make([]float64,len(months))
+	var cc = make([]float64,len(months))
+	for i := 0; i < len(months); i++ {
+		for _,v := range ds{
+			if months[i] == v.Aaa {
+				bb[i] = v.Bbb
+				cc[i] = v.Ccc
+			}
+		}
+	}
+
+	fmt.Println("bb:",bb)
+	fmt.Println("cc:",cc)
 }
