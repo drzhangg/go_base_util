@@ -7,7 +7,6 @@ require (
 	github.com/Microsoft/go-winio v0.4.16 // indirect
 	github.com/Shopify/sarama v1.27.2
 	github.com/docker/distribution v2.7.1+incompatible // indirect
-	github.com/docker/docker v20.10.5+incompatible // indirect
 	github.com/docker/engine-api v0.4.0
 	github.com/docker/go-connections v0.4.0 // indirect
 	github.com/docker/go-units v0.4.0 // indirect
@@ -23,8 +22,6 @@ require (
 	github.com/onsi/ginkgo v1.14.2 // indirect
 	github.com/onsi/gomega v1.10.3 // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
-	github.com/pkg/errors v0.9.1 // indirect
-	github.com/thecodingmachine/gotenberg-go-client/v7 v7.1.0 // indirect
 	golang.org/x/net v0.0.0-20210331212208-0fccb6fa2b5c // indirect
 	golang.org/x/sys v0.0.0-20210403161142-5e06dd20ab57 // indirect
 	golang.org/x/text v0.3.4 // indirect
