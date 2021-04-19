@@ -17,7 +17,7 @@ func main() {
 
 
 	var s = "http://100.73.70.169:7777/file-manage-bucket/2021-03-31/b2fe0403-a420-4aab-8a54-2ad7e6d1523e.sh"
-	reg := regexp.MustCompile(`^http://([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3}):([0-9]{1,5})/([\w-]+)/([\w-]+)/([\w-]+).([\w]+)$`)
+	reg := regexp.MustCompile(`^http://100.73.70.169:7777/([\w-]+)/([\w-]+)/([\w-]+).([\w]+)$`)
 	//s1 := reg.ReplaceAllString(s,"")
 	ss := reg.FindStringSubmatch(s)
 	fmt.Println(len(ss))
