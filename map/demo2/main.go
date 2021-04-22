@@ -15,13 +15,10 @@ func main() {
 	//}
 	//fmt.Println(ms)
 
-
 	var s = "http://100.73.70.169:7777/file-manage-bucket/2021-03-31/b2fe0403-a420-4aab-8a54-2ad7e6d1523e.s"
 
-
-	as := strings.SplitN(s,"/",-1)
+	as := strings.SplitN(s, "/", -1)
 	fmt.Println(as)
-
 
 	reg := regexp.MustCompile(`^http://100.73.70.169:7777/([\w-]+)/([\w-]+)/([\w-]+).([\w]+)$`)
 	//s1 := reg.ReplaceAllString(s,"")
@@ -41,13 +38,22 @@ func main() {
 	//	fmt.Println(param)
 	//}
 
-
 	//files := regexp.MustCompile(`^/([\w-]+)/(([\w-]+).([\w]+))$`)
 	//pp := files.FindStringSubmatch("/us2r-loca3l/ab123c.sh")
 	//fmt.Println(pp)
 
 	//strings.Replace(url.Path, "/"+config.OssConfig.FileBucket+"/", "", 1)
 
+	sss := "We are happy."
+	ns := strings.Replace(sss," ","%20",-1)
+	fmt.Println(ns)
+	for k, v := range sss {
+		fmt.Println("v:", string(v))
+		if string(v) == " "{
+			//strings.
+			fmt.Println("k:",k)
+		}
+	}
 }
 
 func IsIP(ip string) (b bool) {
