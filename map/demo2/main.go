@@ -44,16 +44,18 @@ func main() {
 
 	//strings.Replace(url.Path, "/"+config.OssConfig.FileBucket+"/", "", 1)
 
-	sss := "We are happy."
-	ns := strings.Replace(sss," ","%20",-1)
-	fmt.Println(ns)
-	for k, v := range sss {
-		fmt.Println("v:", string(v))
-		if string(v) == " "{
-			//strings.
-			fmt.Println("k:",k)
-		}
-	}
+	//sss := "We are happy."
+	//ns := strings.Replace(sss," ","%20",-1)
+	//fmt.Println(ns)
+	//for k, v := range sss {
+	//	fmt.Println("v:", string(v))
+	//	if string(v) == " "{
+	//		//strings.
+	//		fmt.Println("k:",k)
+	//	}
+	//}
+
+
 }
 
 func IsIP(ip string) (b bool) {
