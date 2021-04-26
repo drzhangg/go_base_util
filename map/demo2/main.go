@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"regexp"
-	"strings"
+	"strconv"
 )
 
 func main() {
@@ -15,16 +15,10 @@ func main() {
 	//}
 	//fmt.Println(ms)
 
-	var s = "http://100.73.70.169:7777/file-manage-bucket/2021-03-31/b2fe0403-a420-4aab-8a54-2ad7e6d1523e.s"
-
-	as := strings.SplitN(s, "/", -1)
-	fmt.Println(as)
-
-	reg := regexp.MustCompile(`^http://100.73.70.169:7777/([\w-]+)/([\w-]+)/([\w-]+).([\w]+)$`)
-	//s1 := reg.ReplaceAllString(s,"")
-	ss := reg.FindStringSubmatch(s)
-	fmt.Println(len(ss))
-	fmt.Println(ss)
+	////s1 := reg.ReplaceAllString(s,"")
+	//ss := reg.FindStringSubmatch(s)
+	//fmt.Println(len(ss))
+	//fmt.Println(ss)
 	//fmt.Println(s1)
 
 	//reg1 := regexp.MustCompile(`^http://www.flysnow.org/([\d]{4})/([\d]{2})/([\d]{2})/(([\w-]+).([\w]+))$`)
@@ -55,6 +49,35 @@ func main() {
 	//	}
 	//}
 
+	//var ms = make([]map[int]string,0)
+	var m = make(map[int]string)
+	for i := 0; i < 5; i++ {
+
+		m[i] = "int:" + strconv.Itoa(i)
+		//ms = append(ms, m)
+	}
+
+	fmt.Println(m)
+
+	for _, v := range m {
+		fmt.Println(v)
+	}
+
+	nums := []int{9,72,34,29,-49,-22,-77,-17,-66,-75,-44,-30,-24}
+
+	sum := 1
+	for i := 0; i < len(nums); i++ {
+		sum *= nums[i]
+	}
+
+
+	if sum >0{
+		fmt.Println()
+	}else if sum == 0 {
+		fmt.Println()
+	}else {
+		fmt.Println(-1)
+	}
 
 }
 
