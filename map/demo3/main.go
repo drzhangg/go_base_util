@@ -19,13 +19,15 @@ func main() {
 	//s := result[len(result)-1]
 	//fmt.Println(s)
 
-	sentence := "thequickbrownfoxjumpsoverthelazydog"
-
-	m := 0
-	for _,v := range sentence{
-		fmt.Println(v)
-		m |= 1 << (v - 'a')
+	a := 234
+	var  b int
+	c:=1
+	for a > 0 {
+		m := a % 10
+		a/=10
+		b+=m
+		c*=m
+		fmt.Println(m)
 	}
-	fmt.Println(m)
-	fmt.Println(1 << 26 -1)
+	fmt.Println(b,c)
 }
