@@ -15,7 +15,18 @@ func main() {
 	//}
 	//fmt.Println(count)
 
-	 result := []int{1,2,4,6}
-	 s := result[len(result)-1]
-	 fmt.Println(s)
+	//result := []int{1,2,4,6}
+	//s := result[len(result)-1]
+	//fmt.Println(s)
+
+	sentence := "thequickbrownfoxjumpsoverthelazydog"
+
+	m := 0
+	for _,v := range sentence{
+		fmt.Println(v)
+		m |= 1 << (v - 'a')
+	}
+	fmt.Println(m)
+	fmt.Println(1 << 26 -1)
+	fmt.Println(1 << 26)
 }
