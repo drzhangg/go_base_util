@@ -28,5 +28,4 @@ func main() {
 	}
 	fmt.Println(m)
 	fmt.Println(1 << 26 -1)
-	fmt.Println(1 << 26)
 }
