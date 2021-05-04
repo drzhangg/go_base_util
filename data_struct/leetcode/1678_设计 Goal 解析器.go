@@ -1,12 +1,8 @@
-package main
+package leetcode
 
-import (
-	"fmt"
-	"strings"
-)
+import "strings"
 
-func main() {
-	command := "G()(al)"
+func interpret(command string) string {
 	newStr := strings.Split(command,"")
 	var r []string
 	for i := 0; i < len(newStr); i++ {
@@ -18,6 +14,5 @@ func main() {
 			r = append(r, "al")
 		}
 	}
-	rr := strings.Join(r,"")
-	fmt.Println(rr)
+	return strings.Join(r,"")
 }
