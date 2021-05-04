@@ -1,23 +1,30 @@
 package main
 
-import (
-	"fmt"
-	"strings"
-)
+import "fmt"
 
 func main() {
-	command := "G()(al)"
-	newStr := strings.Split(command,"")
-	var r []string
-	for i := 0; i < len(newStr); i++ {
-		if newStr[i] == "G"{
-			r = append(r, "G")
-		}else if newStr[i] =="(" && newStr[i+1] ==")"{
-			r = append(r, "o")
-		}else if newStr[i]=="(" && newStr[i+1] =="a" {
-			r = append(r, "al")
+	command := "ab"
+	var newStrMap = make(map[uint8]int)
+	for i := 0; i < len(command); i++ {
+		newStrMap[command[i]] = 0
+	}
+	fmt.Println(newStrMap)
+
+	words := []string{"ad", "bd", "aaab", "baa", "badab"}
+	var r int
+	for i := 0; i < len(words); i++ {
+		var count int
+		for j := 0; j < len(words[i]); j++ {
+			if _, ok := newStrMap[words[i][j]]; ok {
+				count++
+			} else {
+				count = 0
+				break
+			}
+		}
+		if count == len(words[i]){
+			r ++
 		}
 	}
-	rr := strings.Join(r,"")
-	fmt.Println(rr)
+	fmt.Println(r)
 }
