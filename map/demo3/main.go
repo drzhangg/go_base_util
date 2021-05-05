@@ -30,4 +30,6 @@ func main() {
 		fmt.Println(m)
 	}
 	fmt.Println(b,c)
+
+	fmt.Println(12/2)
 }
