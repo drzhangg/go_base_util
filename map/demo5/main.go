@@ -1,6 +1,14 @@
 package main
 
+import (
+	"fmt"
+)
+
 func main() {
+
+	n := 9
+	fmt.Println(n/10)
+
 
 }
 
