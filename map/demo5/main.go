@@ -1,18 +1,23 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-
-	s := "a1c1e1"
-
-	c := []byte(s)
-	for i := 1; i < len(s); i = i + 2 {
-		c[i] = byte(c[i-1] + c[i] - '0')
+	word1 := []string{"abc", "d", "defg"}
+	word2 := []string{"abcddefg"}
+	var b1, b2 []byte
+	for i := 0; i < len(word1); i++ {
+		for _, v := range word1[i] {
+			b1 = append(b1, byte(v))
+		}
 	}
-	fmt.Println(string(c))
+	for i := 0; i < len(word2); i++ {
+		for _, v := range word2[i] {
+			b2 = append(b2, byte(v))
+		}
+	}
+	fmt.Println(string(b1))
+	fmt.Println(string(b2))
 }
 
 type TreeNode struct {
