@@ -6,10 +6,13 @@ import (
 
 func main() {
 
-	n := 9
-	fmt.Println(n/10)
+	s := "a1c1e1"
 
-
+	c := []byte(s)
+	for i := 1; i < len(s); i = i + 2 {
+		c[i] = byte(c[i-1] + c[i] - '0')
+	}
+	fmt.Println(string(c))
 }
 
 type TreeNode struct {
