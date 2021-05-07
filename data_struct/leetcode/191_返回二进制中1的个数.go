@@ -11,3 +11,12 @@ func hammingWeight(n uint32) int {
 	}
 	return result
 }
+
+func hammingWeight1(n uint32) int {
+	var count int
+	for n > 0 {
+		n = n &(n-1)
+		count++
+	}
+	return count
+}

@@ -19,6 +19,7 @@ func main() {
 	fmt.Println(16 >> 5)
 	fmt.Println(16 << 2)
 
+
 }
 
 func isPowerOfTwo(n int) bool {
