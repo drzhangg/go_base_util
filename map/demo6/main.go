@@ -21,7 +21,8 @@ func main() {
 
 	fmt.Println(34%6)
 	fmt.Println(34/6)
-	fmt.Println(5/6)
+	fmt.Println(5^1)
+	fmt.Println(4&3)
 
 }
 
