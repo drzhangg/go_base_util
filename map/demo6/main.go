@@ -42,6 +42,28 @@ func main() {
 	}
 	fmt.Println(count)
 
+	// 0101  0010
+	fmt.Println(5>>1)
+	/*
+	temp=5>>1
+	temp=2
+	num=1
+
+	temp=2>>1
+	temp=1
+	num=num<<1 +1
+	num=3
+
+	temp=1>>1
+	temp=0
+	num=3<<1+1
+	num=7
+
+	5 ^ num = 5 ^ 7 = 0101 ^ 0111 = 0010 = 2
+	 */
+	fmt.Println(5 ^ 7)
+
+
 }
 
 func isPowerOfTwo(n int) bool {
