@@ -21,8 +21,26 @@ func main() {
 
 	fmt.Println(34%6)
 	fmt.Println(34/6)
-	fmt.Println(5^1)
-	fmt.Println(4&3)
+	fmt.Println(5&4)
+	/*
+	0101
+	0100
+	0100
+	0011
+
+	0011
+	0010
+	0010
+	 */
+
+
+	num := 5
+	var count int
+	for num>0 {
+		num &= num-1
+		count++
+	}
+	fmt.Println(count)
 
 }
 
