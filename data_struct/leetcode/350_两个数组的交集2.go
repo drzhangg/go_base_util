@@ -9,7 +9,8 @@ import "sort"
 输入：nums1 = [4,9,5], nums2 = [9,4,9,8,4]
 输出：[4,9]
 */
-
+// 题解：https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/solution/liang-ge-shu-zu-de-jiao-ji-ii-by-leetcode-solution/
+//1.排序+双指针
 func intersect(nums1 []int, nums2 []int) []int {
 	sort.Ints(nums1)
 	sort.Ints(nums2)
@@ -27,6 +28,27 @@ func intersect(nums1 []int, nums2 []int) []int {
 			result = append(result, nums2[index2])
 			index1++
 			index2++
+		}
+	}
+	return result
+}
+
+//map对比
+func intersect2(nums1 []int, nums2 []int) []int {
+	if len(nums1) > len(nums2) {
+		intersect2(nums2, nums1)
+	}
+
+	var m1 = make(map[int]int)
+	for _, v := range nums1 {
+		m1[v]++
+	}
+
+	var result []int
+	for _,v := range nums2{
+		if m1[v] > 0 {
+			m1[v]--
+			result = append(result, v)
 		}
 	}
 	return result
