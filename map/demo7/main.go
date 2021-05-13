@@ -22,4 +22,6 @@ func main() {
 	}
 	fmt.Println(m)
 
+	fmt.Println(2<<4)
+
 }
