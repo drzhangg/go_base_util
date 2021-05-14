@@ -1,5 +1,6 @@
 package leetcode
 
+// [1,4] 2   return 4
 func findPoisonedDuration(timeSeries []int, duration int) int {
 
 	if len(timeSeries) == 0 {
