@@ -8,6 +8,7 @@ func flatten(root *TreeNode) {
 	flatten(root.Left)
 	flatten(root.Right)
 
+	//后序遍历
 	left := root.Left
 	right := root.Right
 
