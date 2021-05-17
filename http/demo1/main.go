@@ -8,8 +8,11 @@ import (
 func main() {
 
 	r := gin.New()
+
+	var a []int
+
 	r.GET("/hello", func(c *gin.Context) {
-		c.JSON(http.StatusOK,gin.H{"hello":"world"})
+		c.JSON(http.StatusOK,gin.H{"hello":a})
 	})
 
 	r.Run(":8888")
