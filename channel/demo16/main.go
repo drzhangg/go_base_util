@@ -3,13 +3,25 @@ package main
 import (
 	"context"
 	"fmt"
+	"sync"
 )
 
 func main() {
-	arr := []int{1,2,3,4}
+	var wg sync.WaitGroup
 
-	length := len(arr)
-	fmt.Println(float64(arr[length/2 - 1] + arr[length/2]) /2)
+	wg.Add(3)
+
+	go func() {
+		fmt.Println("goroutine 1")
+		wg.Done()
+	}()
+
+	go func() {
+		fmt.Println("goroutine 2")
+		wg.Done()
+	}()
+
+	wg.Wait()
 
 }
 
