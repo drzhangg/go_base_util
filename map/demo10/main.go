@@ -1,10 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
 func main() {
 	r := fib(7)
 	fmt.Println(r)
+
+	arr := []int{4,5,1,-4,-9,1,5}
+	sort.Ints(arr)
+	fmt.Println(arr)
 }
 
 func fib(n int) []int {
