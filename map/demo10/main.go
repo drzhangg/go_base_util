@@ -12,6 +12,20 @@ func main() {
 	arr := []int{4,5,1,-4,-9,1,5}
 	sort.Ints(arr)
 	fmt.Println(arr)
+
+	d := rrr(arr)
+	fmt.Println(d)
+}
+
+func rrr(arr []int) []int {
+	var res []int
+	for i := 0; i < len(arr); i++ {
+		am[arr[i]]++
+		if am[arr[i]] == 1{
+			res = append(res, arr[i])
+		}
+	}
+	return res
 }
 
 func fib(n int) []int {
