@@ -19,6 +19,7 @@ func main() {
 
 func rrr(arr []int) []int {
 	var res []int
+	am := make(map[int]int)
 	for i := 0; i < len(arr); i++ {
 		am[arr[i]]++
 		if am[arr[i]] == 1{
