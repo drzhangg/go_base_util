@@ -15,6 +15,12 @@ func main() {
 
 	d := rrr(arr)
 	fmt.Println(d)
+
+	m := map[byte]byte{
+		'(':')',
+		'{':'}',
+	}
+	fmt.Println(m['('])
 }
 
 func rrr(arr []int) []int {
