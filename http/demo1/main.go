@@ -9,7 +9,7 @@ func main() {
 
 	r := gin.New()
 
-	var a []int
+	a := []int{}
 
 	r.GET("/hello", func(c *gin.Context) {
 		c.JSON(http.StatusOK,gin.H{"hello":a})
@@ -17,7 +17,4 @@ func main() {
 
 	r.Run(":8888")
 
-	//http.HandleFunc("/hello", func(writer http.ResponseWriter, request *http.Request) {
-	//	request
-	//})
 }
