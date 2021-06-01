@@ -3,14 +3,14 @@ package main
 import (
 	"github.com/gin-gonic/gin"
 	_ "github.com/go-sql-driver/mysql"
+	"go_base_util/goroutine/demo3"
 	"go_base_util/goroutine/handler"
 	_ "net/http/pprof"
 )
 
 func main() {
-	r := gin.New()
-	r.POST("/test", Test)
-	r.Run(":8081")
+	wm := demo3.NewWorkerManager(10)
+	wm.StartWorkerPool()
 
 }
 
