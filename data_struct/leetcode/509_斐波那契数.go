@@ -5,14 +5,12 @@ func fib1(n int) int {
 		return n
 	}
 
-	var dp [2]int
-	dp[0] = 0
-	dp[1] = 1
-
-	for i := 2; i <= n; i++ {
-		sum := dp[0] + dp[1]
-		dp[0] = dp[1]
-		dp[1] = sum
+	p, q, r := 0, 0, 1
+	for i := 2; i < n; i++ {
+		p = q
+		q=r
+		r = p + q
 	}
-	return dp[1]
+	return r	
 }
+
