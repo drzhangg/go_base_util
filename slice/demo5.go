@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"math"
+	"reflect"
 )
 
 func main() {
@@ -36,8 +36,14 @@ func main() {
 	//r := now.String() > "2020-05-01"
 	//fmt.Println(r)
 
-	m := make(map[float64]interface{})
-	m[math.NaN()] = 1
-	fmt.Println(m)
-	fmt.Println(m[math.NaN()])
+	//m := make(map[float64]interface{})
+	//m[math.NaN()] = 1
+	//fmt.Println(m)
+	//fmt.Println(m[math.NaN()])
+
+	var a [...]int
+	a[0] = 1
+	b := []int{}
+	fmt.Println(reflect.TypeOf(a))
+	fmt.Println(reflect.TypeOf(b))
 }
