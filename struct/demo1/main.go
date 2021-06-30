@@ -13,3 +13,7 @@ func smallAllocation() *smallStruct {
 func main() {
 	smallAllocation()
 }
+
+type User struct {
+	UserName string `json:"userName"`
+}

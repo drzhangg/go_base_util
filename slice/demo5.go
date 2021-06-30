@@ -1,10 +1,5 @@
 package main
 
-import (
-	"fmt"
-	"reflect"
-)
-
 func main() {
 	//var s []string
 	//for i := 0; i < 9999; i++ {
@@ -41,9 +36,15 @@ func main() {
 	//fmt.Println(m)
 	//fmt.Println(m[math.NaN()])
 
-	var a [...]int
-	a[0] = 1
-	b := []int{}
-	fmt.Println(reflect.TypeOf(a))
-	fmt.Println(reflect.TypeOf(b))
+	//var a [...]int
+	//a[0] = 1
+	//b := []int{}
+	//fmt.Println(reflect.TypeOf(a))
+	//fmt.Println(reflect.TypeOf(b))
+	//wait := make(chan int,1)
+	//<- wait
+	select {
+	default:
+
+	}
 }
