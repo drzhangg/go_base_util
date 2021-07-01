@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"github.com/go-redis/redis"
+	"net/http"
+	_ "net/http/pprof"
 )
 
 func main() {
@@ -28,9 +30,11 @@ func main() {
 	}
 
 
-	fmt.Println("res:",results)
-	fmt.Println("res.len:", len(results))
-	fmt.Println("cursor:",cursorcopy)
+	//fmt.Println("res:",results)
+	//fmt.Println("res.len:", len(results))
+	//fmt.Println("cursor:",cursorcopy)
+
+	_ = http.ListenAndServe(":6060",nil)
 
 
 }
