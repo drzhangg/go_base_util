@@ -6,12 +6,14 @@ import (
 )
 
 func goroutineA(a <-chan int) {
+	fmt.Println("wait goroutine A")
 	val := <-a
 	fmt.Println("G1 received data: ", val)
 	return
 }
 
 func goroutineB(b <-chan int) {
+	fmt.Println("wait goroutine B")
 	val := <-b
 	fmt.Println("G2 reveived data:", val)
 	return
