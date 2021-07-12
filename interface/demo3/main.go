@@ -1,34 +1,24 @@
 package main
 
-import "fmt"
+import (
+	"log"
+	"time"
+)
 
-type Person struct {
-	age int
+func bigSlowOperation() {
+	defer trace("bigSlowOperation") // don't forget the extra parentheses
+	// ...lots of work…2
+	time.Sleep(10 * time.Second) // simulate slow operation by sleeping
 }
 
-func (p Person) howOld() int {
-	return p.age
-}
-
-func (p *Person) growUp() {
-	p.age += 1
+func trace(msg string) func() {
+	start := time.Now()
+	log.Printf("enter %s", msg)
+	return func() {
+		log.Printf("exit %s (%s)", msg,time.Since(start))
+	}
 }
 
 func main() {
-	qcrao := Person{18}
-
-	fmt.Println(qcrao.howOld())
-
-	qcrao.growUp()
-
-	fmt.Println(qcrao.howOld())
-
-	// ------------------------
-
-	stefno := &Person{100}
-	fmt.Println(stefno.howOld())
-
-	stefno.growUp()
-
-	fmt.Println(stefno.howOld())
+	bigSlowOperation()
 }
